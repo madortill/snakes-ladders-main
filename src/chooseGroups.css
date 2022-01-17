@@ -1,0 +1,148 @@
+.page.chooseGroups .container {
+    display: flex;
+    width: 100%;
+}
+
+.page.chooseGroups .back-btn {
+    height: 2rem;
+    padding: 1rem 0 0 0;
+    align-self: self-end;
+    margin-right: 1.4rem;
+}
+
+.page.chooseGroups .title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    margin-right: 1.4rem;
+    transition: color, transform, 0.7s ease-in-out;
+}
+
+.page.chooseGroups .btns-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.page.chooseGroups .explanations-btn {
+    height: 3rem;
+    margin: 0.3rem;
+}
+
+.page.chooseGroups .start-btn {
+    height: 3.2rem;
+    margin: 0.3rem;
+}
+
+.page.chooseGroups .switch {
+    background-color: #CAD6D8;
+    height: 1.7rem;
+    width: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    flex-direction: row-reverse;
+}
+
+.page.chooseGroups .white-dot {
+    background-color: white;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 2rem;
+}
+
+.page.chooseGroups .partners {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.page.chooseGroups .number-of-groups {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 100%;
+}
+
+.page.chooseGroups .num {
+    margin: 1rem;
+    opacity: 0.5;
+    scroll-snap-align: center;
+    display: inline-block;
+}
+
+.page.chooseGroups .names-container {
+    height: 15.5rem;
+    background: var(--green-gradient);
+    overflow-y: auto;
+    width: 85%;
+    align-self: center;
+}
+
+.page.chooseGroups .switch.right {
+    flex-direction: row;
+}
+
+.page.chooseGroups .inside-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.page.chooseGroups .number-of-groups .current {
+    opacity: 1;
+}
+
+.page.chooseGroups .name-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 90%;
+    justify-content: space-between;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+}
+
+.page.chooseGroups .number> :first-child {
+    font-size: 1.8rem;
+}
+
+.page.chooseGroups .number {
+    width: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+.page.chooseGroups .icon-animal {
+    /* width: 7rem; */
+    height: 3rem;
+}
+
+.page.chooseGroups .name-input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: var(--basic-color) 1.5px solid;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-family: Rubik;
+    width: 11rem;
+    margin-right: 0.5rem; 
+}
+.page.chooseGroups .name-input:focus-visible {
+    outline: none;
+  }
+
+.page.chooseGroups .title.missing {
+    color: rgb(206, 71, 71);
+    transform: scale(1.1) translate(-5%, 0);
+}

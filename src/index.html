@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="general.css" type="text/css">
+    <link rel="stylesheet" href="opening.css" type="text/css">
+    <link rel="stylesheet" href="about.css" type="text/css">
+    <link rel="stylesheet" href="chooseGroups.css" type="text/css">
+    <link rel="stylesheet" href="currentTurn.css" type="text/css">
+    <link rel="stylesheet" href="map.css" type="text/css">
+    <link rel="stylesheet" href="questions&missions.css" type="text/css">
+    <link rel="stylesheet" href="instructions.css" type="text/css">
+    
+    <!-- javascript -->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="dataBase.js"></script>
+
+    <link rel="shortcut icon" href="../assets/images/logo.svg" type="image/x-icon">  
+    
+    <title>סולמות ונחשים</title>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="page opening active">
+            <header>
+                <img src="../assets/images/logo.svg" alt="logo" class="logo">
+                <img src="../assets/images/buttons/about-btn.svg" alt="about" class="about-btn shadow">
+            </header>
+            <img class="snakes-title shadow" src="../assets/images/opening/snakes-blue.svg " alt="snakes">
+            <div class="dots">
+                <div class="dot dot-0 active"></div>
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+            </div>
+            <div class="block">
+                <div class="instruction"> אנחנו רוצים לשחק בנושא - </div>
+                <div class="choose-sub-container">
+                    <img class="right-btn btn" src="../assets/images/buttons/right-btn.svg" alt="right-btn">
+                    <div class="subject-cotainer">
+                        <img class="icon-sub" src="../assets/images/opening/icon-book.svg" alt="icon">
+                        <div class="title-sub">מקראות ישראל</div>
+                    </div>
+                    <img class="left-btn btn" src="../assets/images/buttons/left-btn.svg" alt="left-btn">
+                </div> 
+                <img class="curr-subject-img" src="../assets/images/opening/book.svg" alt="img">
+                <div class="btn-container">
+                    <img class="start-btn shadow" src="../assets/images/buttons/play-blue-btn.svg" alt="start-btn">
+                </div>
+                <div class="gradient"></div>
+            </div>
+            
+        </div>
+        
+        <div class="page about">
+            <div class="container">
+                <div class="text">
+                    <div class="title">אודות</div>
+                    <div class="lines-container">
+                        <div> ראש מדור טי"ל:</div>
+                        <div> רס"ן מיגל לויתן</div>
+                    </div>
+                    <div class="lines-container">
+                        <div>רת"ח מו"פ וחדשנות בלמידה:</div>
+                        <div>סמ"ר גל גנסין</div>
+                    </div>
+                    <div class="lines-container">
+                        <div>פיצוח הדרכתי:</div>
+                        <div>סמל גלי חיימוביץ'</div>
+                    </div>
+                    <div class="lines-container">
+                        <div>פיתוח:</div>
+                        <div>סמל הלה צביון</div>
+                    </div>
+                    <div class="lines-container">
+                        <div>מעצבת UX & UI:</div>
+                        <div>סמל מייה ליבנה</div>
+                    </div>
+                    <div class="lines-container">
+                        <div>גרסה:</div>
+                        <div>אוגוסט 2021</div>
+                    </div>
+                </div>
+                
+                <img class="logo" src="../assets/images/madortil.svg" alt="logo">
+                <img class="back-btn" src="../assets/images/buttons/fullBack-btn.svg" alt="back-btn">
+            </div>
+        </div>
+
+        <div class="page chooseGroups">
+            <div class="container">
+                <img class="back-btn" src="../assets/images/buttons/small-back-btn.svg" alt="back-btn">
+                <div class="inside-container">
+                    <div class="title">אנחנו משחקים:</div>
+                    <div class="partners">
+                        <div class="text">ביחידים</div>
+                        <div class="switch">
+                            <div class="white-dot"></div>
+                        </div>
+                        <div class="text">בקבוצות</div>
+                    </div>
+                </div>
+                <div class="inside-container">
+                    <div class="title">כמות שחקנים/קבוצות:</div>
+                    <div class="number-of-groups">
+                        <div class="num num-1">1</div>
+                        <div class="num num-2">2</div>
+                        <div class="num num-3 ">3</div>
+                        <div class="num num-4">4</div>
+                        <div class="num num-5">5</div>
+                        <div class="num num-6">6</div>
+                    </div>
+                </div>
+                <div class="inside-container">
+                    <div class="title">שמות:</div>
+                    <div class="names-container"></div> <!--create programmatic-->
+                </div>
+                <div class="btns-container">
+                    <img src="../assets/images/buttons/question-mark.svg" alt="" class="explanations-btn shadow">
+                    <img src="../assets/images/buttons/play-blue-btn.svg" alt="" class="start-btn shadow">
+                </div>
+                <!-- </div> -->
+            </div>
+            
+        </div>
+        
+        <div class="page instructions">
+            <div class="container">
+                <div class="container-title">
+                    <div class="title">מטרת המשחק</div>
+                    <div class="text">עליכם לעבוד ביחידים או בקבוצות ולהגיע למשבצת מספר 100, וכך המשחק נגמר.</div>
+                </div>
+                <div class="container-title">
+                    <div class="title">מהלך המשחק</div>
+                    <div class="text">כל השחקנים יתחילו את המשחק במשבצת 1.
+                        כל שחקן בתורו יטיל קוביה ויתקדם. 
+                        לאורך הלוח פרוסים סימנים מיוחדים:</div>
+                </div>
+                <div class="container-expl">
+                    <div class="row">
+                        <img src="../assets/images/instractions/ladder-icon.svg" alt="" class="icon">
+                        <div class="text"><b>משימה - </b>פעילות שצריך לבצע כיחיד או כקבוצה. כדי להמשיך לשחק תצטרכו לעבור אותה בהצלחה. אחרת, לא תוכלו לעלות בסולם.</div>
+                    </div>
+                    <div class="row">
+                        <img src="../assets/images/instractions/snake-icon.svg" alt="" class="icon">
+                        <div class="text"><b>שאלה - </b>כדי להמשיך תצטרכו לענות עליה נכון. אם לא תצליחו, תחליקו על הנחש.</div>
+
+                    </div>
+                    <div class="row">
+                        <img src="../assets/images/instractions/info-icon.svg" alt="" class="icon">
+                        <div class="text"><b>הידעת - </b>עובדה מעניינת על הנושא בו אתם משחקים. תוכלו לקרוא אותה ולהמשיך.</div>
+                    </div>
+                    <div class="row">
+                        <img src="../assets/images/instractions/black-hole-icon.svg" alt="" class="icon">
+                        <div class="text"><b>חור שחור - </b>אם תיפלו בהם, תשלחו מחוץ ללוח ותתקעו עד שתבצעו משימה בהצלחה.</div>
+                    </div>
+                </div>
+                <img src="../assets/images/buttons/fullBack-btn.svg" alt="btn" class="back-btn">
+            </div>
+        </div>
+        <div class="page currentTurn">
+            <div class="container">
+                <div class="title-container">
+                    <img src="" alt="animal" class="animal-img">
+                    <div class="turn-container">
+                        <div class="title">תור</div>
+                        <div class="current-group"></div>
+                    </div>
+                </div>
+                <div class="mission-container shadow">
+                    <div class="option default">
+                        <div class="text active">לחצו על הקובייה</div>
+                    </div>
+                    <div class="option question">
+                        <div class="text">הגעתם למשבצת שאלה!</div>
+                        <img src="../assets/images/buttons/open-btn.svg" alt="btn" class="open-btn btn shadow">
+                    </div>
+                    <div class="option mission">
+                        <div class="text">הגעתם למשבצת משימה!</div>
+                        <img src="../assets/images/buttons/open-btn.svg" alt="btn" class="open-btn btn shadow">
+                    </div>
+                    <div class="option new-info">
+                        <div class="text">הגעתם למשבצת הידעת!</div>
+                        <img src="../assets/images/buttons/open-btn.svg" alt="btn" class="open-btn btn shadow">
+                    </div>
+                    <div class="option black-hole">
+                        <div class="text">הגעתם למשבצת חור שחור...</div>
+                        <div class="text">אתם עוברים למשבצת:<b></b></div>
+                        <img src="../assets/images/buttons/next-btn.svg" alt="btn" class="next-btn btn shadow">
+                    </div>
+                    <div class="option empty">
+                        <div class="text">הגעתם למשבצת ריקה</div>
+                        <img src="../assets/images/buttons/next-btn.svg" alt="btn" class="next-btn btn shadow">
+                    </div>
+                    <div class="option end">
+                        <div class="text">עברתם את המשימות בהצלחה וסיימתם את המסלול!</div>
+                    </div>
+                </div>
+                <div class="cubes">
+                    <img src="../assets/images/cubes/cube1.svg" alt="cube" class="cube cube1 active">
+                    <img src="../assets/images/cubes/cube2.svg" alt="cube" class="cube cube2">
+                    <img src="../assets/images/cubes/cube3.svg" alt="cube" class="cube cube3">
+                    <img src="../assets/images/cubes/cube4.svg" alt="cube" class="cube cube4">
+                    <img src="../assets/images/cubes/cube5.svg" alt="cube" class="cube cube5">
+                    <img src="../assets/images/cubes/cube6.svg" alt="cube" class="cube cube6">
+                </div>
+                <img src="../assets/images/opening/commander.svg" alt="img" class="curr-subject-img">
+                <div class="gradient"></div>
+                <img src="../assets/images/map-icon.svg" alt="map-icon" class="map-icon shadow">
+            </div>
+        </div>
+
+        <div class="page question ">
+            <img src="../assets/images/bg-question.svg" alt="" class="bg-question">
+            <div class="container">
+                <div class="question"></div>
+                <div class="ans ans1 shadow"></div>
+                <div class="ans ans2 shadow"></div>
+                <div class="ans ans3 shadow"></div>
+                <div class="ans ans4 shadow"></div>
+                <img src="../assets/images/buttons/check-btn.svg" alt="bg" class="check-btn btn">
+                <div class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="page mission">
+            <img src="../assets/images/bg-mission.svg" alt="bg" class="bg-mission">
+            <div class="container">
+                <div class="title-container">
+                    <img src="" alt="animal" class="animal-img">
+                    <div class="title">הותקלתם!</div>
+                </div>
+                <div class="text"></div>
+                <div class="btns-container">
+                    <img src="../assets/images/buttons/success-btn.svg" alt="" class="success-btn btn">
+                    <img src="../assets/images/buttons/failure-btn.svg" alt="" class="failure-btn btn">
+                </div>
+                <img src="../assets/images/buttons/arrow-next-btn.svg" alt="btn" class="arrow-next-btn">
+                <div class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="page new-info">
+            <img src="../assets/images/bg-mission.svg" alt="bg" class="bg-mission">
+            <div class="container">
+                <div class="title-container">
+                    <img src="" alt="animal" class="animal-img">
+                    <div class="title">הידעת?</div>
+                </div>
+                <div class="text"></div>
+                <img src="../assets/images/buttons/next-btn.svg" alt="btn" class="next-btn btn">
+            </div>
+            
+        </div>
+        <div class="page map">
+            <div class="container">
+                <div class="map">
+                    <div class="row1 end"></div>
+                    <div class="row2  level level3"></div>
+                    <div class="row3 ladder"></div>
+                    <div class="row4  level level2"></div>
+                    <div class="row5 ladder"></div>
+                    <div class="row6  level level1">
+                        <!-- <img src="../assets/images/buttons/dice-btn.svg" alt="btn" class="btn"> -->
+
+                    </div>
+                </div>
+            <img src="../assets/images/buttons/dice-btn.svg" alt="btn" class="dice-btn btn">
+            </div>
+        </div>              
+    </div>
+</body>
+</html>

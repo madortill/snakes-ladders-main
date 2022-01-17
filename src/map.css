@@ -1,0 +1,40 @@
+.page.map {
+    background-image: url("../assets/images/mapbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page.map .dice-btn {
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+}
+
+.page.map .map {
+    background-image: url("../assets/images/mapcrop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 80%;
+    width: 100%;
+    margin-top: 0.5rem;
+
+    display: grid;
+    grid-template-rows: [row1] 12.8% [row2] 22.8% [row3] 8.5% [row4] 23.7% [row5] 8.5% [row6] 24%;
+    /* grid-template-rows: [row1] 18% [row2] 22.5% [row3] 6.1% [row4] 22.5% [row5] 7% [row6] 24%; */
+}
+
+.page.map .level {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 0.5%;
+    direction: ltr;
+}
+
+.page.map .player {
+    height: 82%;
+    padding-left: 0.2em;
+    padding-top: 0.2em;
+}

@@ -1,0 +1,127 @@
+.page.question .container,
+.page.mission .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.page.question .btn,
+.page.mission .btn {
+    height: 3.6rem;
+    margin-top: 1rem;
+}
+
+.page.question .ans.checked {
+    border: 6px solid #3C3C3B;
+}
+
+.page.question .ans {
+    background-color: white;
+    width: 70%;
+    height: 3.7rem;
+    border-radius: 1rem;
+    margin: 0.3rem;
+    transition: background-color, color, 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border: 6px solid rgb(142 255 133 / 0%);
+}
+
+.page.mission .btns-container {
+    display: flex;
+    width: 86%;
+    justify-content: space-around;
+}
+
+.page.mission .feedback,
+.page.question .feedback {
+    border-radius: 1.4rem 1.4rem 0 0;
+    background-color: white;
+    height: 4rem;
+    width: 90%;
+    position: absolute;
+    bottom: -4rem;
+    transition: bottom 0.8s ease-in-out;
+    visibility: hidden;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-right: 1.4rem;
+    padding-left: 1rem;
+}
+
+.page.question .question {
+    margin: 2.5rem 2.5rem 1rem;
+    font-size: 1.35rem;
+}
+
+.page.question .ans.correct {
+    background-color: rgb(60, 60, 59);
+    border: 6px solid rgb(142, 255, 133);
+    color: white;
+}
+
+.page.question .ans.mistake {
+    background-color: rgb(60, 60, 59);
+    border: 6px solid rgb(230, 51, 42);
+    color: white;
+}
+
+.page.question .ans.real-ans {
+    border: 6px solid rgb(142, 255, 133);
+}
+
+
+.page.mission .arrow-next-btn {
+    display: none;
+    margin: 1rem;
+    height: 3rem;
+}
+
+.page.mission .animal-img,
+.page.new-info .animal-img {
+    height: 13rem;
+}
+
+.page.mission .title {
+    font-size: 2.4rem;
+    right: -1rem;
+    font-weight: 800;
+    width: fit-content;
+    position: relative;
+    /* top: -4rem; */
+    top: -1rem;
+    display: inline-block;
+}
+
+.page.new-info .title {
+    font-size: 2.7rem;
+    right: -1rem;
+    font-weight: 800;
+    width: fit-content;
+    position: relative;
+    top: -5rem;
+    display: inline-block;
+}
+
+.page.mission .title-container {
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.page.mission .text,
+.page.new-info .text {
+    margin: 0.5rem 2.7rem 1rem;
+    font-size: 1.35rem;
+}
+
+.page.new-info .next-btn {
+    height: 3.6rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,113 @@
+.page.currentTurn .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.page.currentTurn .map-icon {
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    z-index: 2;
+    right: 0;
+}
+
+.page.currentTurn .animal-img {
+    height: 13rem;
+}
+
+.page.currentTurn .title {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.page.currentTurn .turn-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+
+.page.currentTurn .title-container {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.page.currentTurn .current-group {
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 12rem;
+}
+
+.page.currentTurn .mission-container {
+    background-color: #fff;
+    height: 66rem;
+    width: 16rem;
+    border-radius: 1.3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.page.currentTurn .cube.active {
+    display: block;
+    /* transform: rotate(20deg); */
+}
+
+.page.currentTurn .cube {
+    height: 10rem;
+    display: none;
+    z-index: 2;
+}
+
+.page.currentTurn .cubes {
+    margin-top: 2rem;
+    z-index: 2;
+    transition: 1s all ease-in-out;
+}
+
+.page.currentTurn .text {
+    font-size: 1.25rem;
+    /* margin: 0.3rem; */
+    text-align: center;
+    padding: 0.7rem;
+}
+
+.page.currentTurn .text b {
+    padding: 0.4rem;
+}
+
+.page.currentTurn .option.black-hole .text {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.page.currentTurn .end .text {
+    padding: 0.8rem;
+}
+
+.page.currentTurn .mission-container .btn {
+    height: 3.4rem;
+    margin: 0.3rem;
+}
+
+.page.currentTurn .option.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page.currentTurn .option:not(.active) {
+    display: none;
+}
+
+.page.currentTurn .restart-btn {
+    height: auto;
+}

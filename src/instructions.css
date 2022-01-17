@@ -1,0 +1,44 @@
+.page.instructions .container {
+    padding-top: 2rem;
+    width: 85%;
+}
+
+.page.instructions .icon {
+    height: 2.7rem;
+    margin-left: 1rem;
+}
+
+.page.instructions .title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.page.instructions .container-title {
+    margin-bottom: 1rem;
+}
+
+.page.instructions .text {
+    margin-top: 0.3rem;
+    width: 95%;
+}
+
+.page.instructions .row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.page.instructions .bold {
+    font-weight: 800;
+    width: fit-content;
+}
+
+.page.instructions .container-text {
+    display: flex;
+}
+
+.page.instructions .back-btn {
+    height: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 85%;
+}
